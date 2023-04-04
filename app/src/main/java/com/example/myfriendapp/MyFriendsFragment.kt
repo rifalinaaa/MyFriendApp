@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myfriendappk.MyFriend
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MyFriendsFragment : Fragment() {
@@ -44,10 +45,10 @@ class MyFriendsFragment : Fragment() {
     }
     private fun simulasiDataTeman() {
         listTeman = ArrayList()
-        listTeman.add(MyFriend("Muhammad", "Laki-laki",
-            "ade@gmail.com", "085719004268", "Bandung"))
-        listTeman.add(MyFriend("Al Harits", "Laki-laki",
-            "rifaldi@gmail.com", "081213416171", "Bandung"))
+        listTeman.add(MyFriend(1, "rifalina", "Perempuan","ade@gmail.com", "085719004268", "Bandung"))
+        listTeman.add(
+            MyFriend(2,"Al Harits", "Laki-laki", "rifaldi@gmail.com", "081213416171", "Bandung")
+        )
     }
     private fun tampilTeman() {
         listMyFriends?.layoutManager = LinearLayoutManager(activity)

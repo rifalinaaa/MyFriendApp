@@ -1,13 +1,15 @@
-package com.example.myfriendapp
+package com.example.myfriendappk
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class MyFriend (
+data class MyFriend(
     @PrimaryKey(autoGenerate = true)
-    val nama : String,
-    val kelamin : String,
-    val email : String,
+    val temanId: Int? = null,
+    val nama: String,
+    val kelamin: String,
+    val email: String,
     val telp: String,
     val alamat: String
 )
